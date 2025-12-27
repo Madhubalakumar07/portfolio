@@ -10,7 +10,6 @@ body {
     color: #333;
 }
 
-/* Header */
 header {
     background-color: #0a192f;
     color: #fff;
@@ -28,7 +27,6 @@ header p {
     color: #ccd6f6;
 }
 
-/* Navigation */
 nav {
     background-color: #112240;
     display: flex;
@@ -47,7 +45,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Sections */
 section {
     max-width: 1000px;
     margin: 40px auto;
@@ -62,13 +59,11 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* About */
 .about p {
     font-size: 1.05rem;
     line-height: 1.6;
 }
 
-/* Skills */
 .skills ul {
     list-style: none;
     display: grid;
@@ -83,7 +78,6 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Projects */
 .projects .card {
     background: #fff;
     padding: 20px;
@@ -96,14 +90,15 @@ h2 {
     color: #112240;
     margin-bottom: 8px;
 }
-
-/* Contact */
+.projects p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
 .contact p {
     font-size: 1.1rem;
     margin-bottom: 10px;
 }
 
-/* Footer */
 footer {
     background-color: #0a192f;
     color: #fff;
