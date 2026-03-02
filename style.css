@@ -764,6 +764,40 @@ body {
 }
 
 /* ============================================
+   LEETCODE SECTION
+   ============================================ */
+.leetcode {
+    background: var(--bg-secondary);
+}
+
+.leetcode-content {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.leetcode-card {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 14px;
+    background: var(--bg-tertiary);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    transition: var(--transition-smooth);
+}
+
+.leetcode-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-blue);
+    box-shadow: 0 15px 40px rgba(59, 130, 246, 0.2);
+}
+
+.leetcode-heatmap {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* ============================================
    CONTACT SECTION
    ============================================ */
 .contact {
@@ -972,6 +1006,10 @@ body {
     .experience-content,
     .contact-content {
         grid-template-columns: 1fr;
+    }
+
+    .leetcode-card {
+        padding: 0.75rem;
     }
 }
 

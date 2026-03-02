@@ -95,7 +95,7 @@ if (contactForm) {
 // ============================================
 // FADE-IN ANIMATION FOR ELEMENTS ON SCROLL
 // ============================================
-const fadeElements = document.querySelectorAll('.skill-category, .project-card, .stat, .cert-card, .about-text');
+const fadeElements = document.querySelectorAll('.skill-category, .project-card, .stat, .cert-card, .about-text, .leetcode-card');
 
 const fadeObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
@@ -180,6 +180,15 @@ console.log('Portfolio loaded successfully! 🚀');
 // ============================================
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
+const leetcodeHeatmap = document.getElementById('leetcodeHeatmap');
+
+function updateLeetCodeHeatmapTheme() {
+    if (!leetcodeHeatmap) return;
+
+    const username = leetcodeHeatmap.getAttribute('data-username') || 'Madhubalakumar';
+    const theme = body.classList.contains('light-theme') ? 'light' : 'dark';
+    leetcodeHeatmap.src = `https://leetcard.jacoblin.cool/${username}?theme=${theme}&font=Outfit&ext=heatmap`;
+}
 
 // Check for saved theme preference or system preference
 const savedTheme = localStorage.getItem('theme');
@@ -188,6 +197,8 @@ const systemTheme = window.matchMedia('(prefers-color-scheme: light)').matches ?
 if (savedTheme === 'light' || (!savedTheme && systemTheme === 'light')) {
     body.classList.add('light-theme');
 }
+
+updateLeetCodeHeatmapTheme();
 
 if (themeToggle) {
     themeToggle.addEventListener('click', () => {
@@ -199,5 +210,7 @@ if (themeToggle) {
         } else {
             localStorage.setItem('theme', 'dark');
         }
+
+        updateLeetCodeHeatmapTheme();
     });
 }
