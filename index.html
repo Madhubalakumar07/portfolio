@@ -25,6 +25,7 @@
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#experience" class="nav-link">Experience</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <!-- Theme Toggle -->
@@ -407,17 +408,101 @@
         </div>
     </section>
 
-    <!-- LeetCode Heat Sheet Section -->
-    <section id="leetcode" class="section leetcode">
+    <!-- Achievements Section -->
+    <section id="achievements" class="section leetcode" data-username="Madhubalakumar"
+        data-profile-url="https://leetcode.com/u/Madhubalakumar/">
         <div class="container">
-            <h2 class="section-title">LeetCode Heat Sheet</h2>
-            <div class="leetcode-content">
-                <a href="https://leetcode.com/u/Madhubalakumar/" target="_blank" rel="noopener noreferrer"
-                    class="leetcode-card" aria-label="Open LeetCode Profile">
-                    <img src="https://leetcard.jacoblin.cool/Madhubalakumar?theme=dark&font=Outfit&ext=heatmap"
-                        alt="Madhubalakumar LeetCode realtime heat sheet" class="leetcode-heatmap"
-                        id="leetcodeHeatmap" data-username="Madhubalakumar">
-                </a>
+            <div class="leetcode-shell">
+                <div class="leetcode-header">
+                    <div class="leetcode-eyebrow">Consistent problem solving</div>
+                    <h2 class="section-title leetcode-title">Achievements</h2>
+                    <p class="leetcode-copy">Live LeetCode achievements for the last 365 days, with solved breakdown and current streak.</p>
+                </div>
+                <div class="leetcode-summary-grid">
+                    <a href="https://leetcode.com/u/Madhubalakumar/" target="_blank" rel="noopener noreferrer"
+                        class="leetcode-summary-card leetcode-solved-card" aria-label="Open LeetCode solved stats">
+                        <div class="leetcode-ring-area">
+                            <div class="leetcode-ring">
+                                <div class="leetcode-ring-center">
+                                    <div class="leetcode-solved-main"><span id="leetcodeSolvedCount">171</span><span
+                                            class="leetcode-solved-total">/<span id="leetcodeTotalQuestions">3865</span></span>
+                                    </div>
+                                    <div class="leetcode-solved-label">Solved</div>
+                                </div>
+                            </div>
+                            <div class="leetcode-attempting"><span id="leetcodeAttemptingCount">9</span> Attempting</div>
+                        </div>
+                        <div class="leetcode-difficulty-stack">
+                            <div class="leetcode-difficulty-item leetcode-easy">
+                                <span>Easy</span>
+                                <strong><span id="leetcodeEasySolved">120</span>/<span id="leetcodeEasyTotal">930</span></strong>
+                            </div>
+                            <div class="leetcode-difficulty-item leetcode-medium">
+                                <span>Med.</span>
+                                <strong><span id="leetcodeMediumSolved">50</span>/<span id="leetcodeMediumTotal">2022</span></strong>
+                            </div>
+                            <div class="leetcode-difficulty-item leetcode-hard">
+                                <span>Hard</span>
+                                <strong><span id="leetcodeHardSolved">1</span>/<span id="leetcodeHardTotal">913</span></strong>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://leetcode.com/u/Madhubalakumar/" target="_blank" rel="noopener noreferrer"
+                        class="leetcode-summary-card leetcode-badge-card" aria-label="Open LeetCode badge section">
+                        <div class="leetcode-summary-top">
+                            <span class="leetcode-summary-label">Badges</span>
+                            <span class="leetcode-summary-arrow">→</span>
+                        </div>
+                        <div class="leetcode-badge-count">1</div>
+                        <div class="leetcode-badge-wrap">
+                            <img src="https://assets.leetcode.com/static_assets/others/lg2550.png"
+                                alt="50 Days Badge 2025" class="leetcode-badge-image">
+                            <div>
+                                <p class="leetcode-summary-text">Most Recent Badge</p>
+                                <h3 class="leetcode-summary-title">50 Days Badge 2025</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="leetcode-card leetcode-heatmap-card">
+                    <div class="leetcode-heatmap-head">
+                        <h3 class="leetcode-submission-line"><span id="leetcodeYearSubmissions">420</span> submissions in the
+                            past one year</h3>
+                        <div class="leetcode-heatmap-stats">
+                            <span>Total active days: <strong id="leetcodeActiveDays">115</strong></span>
+                            <span>Max streak: <strong id="leetcodeMaxStreak">34</strong></span>
+                            <span class="leetcode-current-pill">Current: <strong id="leetcodeCurrentStreak">0</strong> days</span>
+                        </div>
+                    </div>
+                    <div class="leetcode-heatmap-layout">
+                        <div class="leetcode-week-labels" aria-hidden="true">
+                            <span>Mon</span>
+                            <span>Wed</span>
+                            <span>Fri</span>
+                        </div>
+                        <div class="leetcode-heatmap-scroll">
+                            <div class="leetcode-month-labels" id="leetcodeMonthLabels" aria-hidden="true"></div>
+                            <div class="leetcode-heatmap-grid" id="leetcodeHeatmapGrid" role="img"
+                                aria-label="LeetCode activity heatmap"></div>
+                        </div>
+                    </div>
+                    <div class="leetcode-legend" aria-hidden="true">
+                        <span>Less</span>
+                        <div class="leetcode-legend-scale">
+                            <span class="legend-level" data-level="0"></span>
+                            <span class="legend-level" data-level="1"></span>
+                            <span class="legend-level" data-level="2"></span>
+                            <span class="legend-level" data-level="3"></span>
+                            <span class="legend-level" data-level="4"></span>
+                        </div>
+                        <span>More</span>
+                    </div>
+                    <div class="leetcode-card-footer">
+                        <span class="leetcode-status" id="leetcodeStatus">Syncing activity...</span>
+                        <a href="https://leetcode.com/u/Madhubalakumar/" target="_blank" rel="noopener noreferrer"
+                            class="leetcode-profile-link" aria-label="Open full LeetCode profile">View Full Profile</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
